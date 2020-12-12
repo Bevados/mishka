@@ -1,0 +1,71 @@
+@import "global/mixins";
+@import "global/variables";
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/OpenSans-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('../fonts/OpenSans-Bold.ttf');
+    font-display: swap;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    min-width: 320px;
+    max-width: 1250px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+    color: black;
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+h1, h2, h3, a, p, span, button, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}

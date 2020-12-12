@@ -1,0 +1,29 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Project Mishka",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Bevados/mishka.git"
+  },
+  "author": "Vados",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bevados/mishka/issues"
+  },
+  "homepage": "https://github.com/Bevados/mishka#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.1"
+  }
+}

@@ -1,0 +1,178 @@
+.product {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1250px;
+    width: 100%;
+    background-color: #f9f9f9;
+    background-image: url('../img/product-bg-mob.jpg');
+    background-position: center -18px;
+    background-repeat: no-repeat;
+}
+
+.product__wrapper {
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 328px;
+    position: relative;
+    max-width: 1050px;
+    width: 100%;
+}
+
+.product__name {
+    margin-right: 9.375%;
+    margin-left: 9.375%;
+    @include font('OpenSans', 27px, 30px, bold, #000);
+    text-align: center;
+}
+
+.product__list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.product__item {
+    width: 100%;
+    @include font('OpenSans', 19px, 24px, bold, #fff);
+    &:first-child {
+        background-color: $color-brand;
+        & .product__item__link::after {
+            content: '';
+            position: absolute;
+            top: 23px;
+            right: 36px;
+            display: inline-block;
+            width: 41px;
+            height: 62px;
+            background-image: url('../img/product-interior.png');
+            opacity: 0.5;
+        }
+    }
+        &:last-child {
+        background-color: #56c3b2;
+        & .product__item__link::after {
+            content: '';
+            position: absolute;
+            top: 21px;
+            right: 27px;
+            display: inline-block;
+            width: 60px;
+            height: 61px;
+            background-image: url('../img/product-toy.png');
+            opacity: 0.5;
+        }
+    }
+    &:hover .product__item__link::after {
+        opacity: 0.7;
+    }
+    &:active .product__item__link::after {
+        opacity: 0.3;
+    }
+
+    &:active span {
+        opacity: 0.3;
+    }
+}
+
+.product__item__link {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    & span {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 354px) {
+    .product__wrapper {
+        padding-bottom: 358px;
+    }
+}
+
+@media (min-width: 500px) {
+    .product__wrapper {
+        padding-bottom: 255px;
+    }
+    .product__list {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .product__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 668px) {
+    .product__wrapper {
+        max-width: 668px;
+    }
+}
+
+@media (min-width: 768px) {
+    .product {
+        padding-right: 50px;
+        padding-left: 50px;
+        background-image: url('../img/product-bg-desk.jpg');
+        background-position: center -1px;
+    }
+    .product__wrapper {
+        padding-top: 154px;
+        padding-bottom: 491px;
+        max-width: 1050px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .product__name {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .product__item  {
+        font-size: 20px;
+        line-height: 30px;
+        &:hover .product__item__link {
+            transition: padding-bottom .5s;
+            padding-bottom: 36px;
+        }
+        // &:hover .product__item__link::after {
+        //     opacity: 0.7;
+        // }
+        // &:active .product__item__link::after {
+        //     opacity: 0.3;
+        // }
+
+    }
+
+    .product__item__link {
+        padding-top: 28px;
+        padding-bottom: 31px;
+        & span {
+            margin-left: 37px;
+        }
+    }
+}
+
+
+@media (min-width: 1250px) {
+    .product {
+        background-position: center top;
+    }
+
+    .product__wrapper {
+        padding-top: 155px;
+        padding-bottom: 476px;
+    }
+
+    .product__name {
+        font-size: 53px;
+        line-height: 57px;
+    }
+}
