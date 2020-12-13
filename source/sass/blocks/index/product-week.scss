@@ -109,7 +109,16 @@
     width: 100%;
     @include font('OpenSans', 17px, 20px, bold, #444444);
     text-align: center;
+    text-transform: uppercase;
     border: 2px solid #444444;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: #444;
+    }
+    &:active {
+        color: #ffffff4d;
+
+    }
 }
 
 .product-week__picture {

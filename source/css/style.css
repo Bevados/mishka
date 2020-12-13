@@ -619,7 +619,13 @@ button {
   font-weight: bold;
   color: #444444;
   text-align: center;
+  text-transform: uppercase;
   border: 2px solid #444444; }
+  .product-week__order:hover {
+    color: white;
+    background-color: #444; }
+  .product-week__order:active {
+    color: rgba(255, 255, 255, 0.3); }
 
 .product-week__picture {
   padding-right: 30px;
@@ -781,3 +787,153 @@ button {
     z-index: 10; }
     .product-week__name br {
       display: block; } }
+
+.about-us {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1250px;
+  width: 100%;
+  background-color: #fff; }
+
+.about-us__wrapper {
+  margin: 0 auto;
+  padding: 34px 30px 56px;
+  position: relative;
+  min-width: 320px;
+  max-width: 1050px;
+  width: 100%; }
+  .about-us__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/about-us-zigzag.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.about-us__title {
+  margin-bottom: 31px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000; }
+
+.about-us__list {
+  display: grid;
+  grid-gap: 29px 0;
+  width: 100%; }
+
+.about-us__item {
+  padding-top: 54px;
+  position: relative;
+  width: 100%;
+  font-family: "OpenSans", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000; }
+  .about-us__item:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    display: inline-block;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/about-us_icon-1.png");
+    background-repeat: no-repeat; }
+  .about-us__item:nth-child(2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/about-us_icon-2.png");
+    background-repeat: no-repeat; }
+  .about-us__item:nth-child(3):before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    display: inline-block;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/about-us_icon-3.png");
+    background-repeat: no-repeat; }
+  .about-us__item:nth-child(4):before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/about-us_icon-4.png");
+    background-repeat: no-repeat; }
+  .about-us__item:nth-child(5):before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -6px;
+    display: inline-block;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/about-us_icon-5.png");
+    background-repeat: no-repeat; }
+  .about-us__item:nth-child(6):before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/about-us_icon-6.png");
+    background-repeat: no-repeat; }
+
+@media (min-width: 580px) {
+  .about-us__list {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column; } }
+
+@media (min-width: 728px) and (max-width: 767px) {
+  .about-us__wrapper {
+    margin: 0 auto;
+    width: 728px; } }
+
+@media (min-width: 768px) {
+  .about-us__wrapper {
+    padding: 67px 50px 83px; }
+  .about-us__title {
+    margin-bottom: 47px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #000; }
+  .about-us__list {
+    grid-gap: 56px 0; }
+  .about-us__item {
+    padding-top: 55px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #000; } }
+
+@media (min-width: 1050px) {
+  .about-us__wrapper {
+    padding: 84px 175px 90px; }
+  .about-us__title {
+    margin-bottom: 46px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+    color: #000; } }
