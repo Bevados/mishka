@@ -1,0 +1,131 @@
+.page-footer {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1250px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+    margin: 0 auto;
+    padding: 25px 30px 23px;
+    max-width: 1050px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 81.25%;
+        height: 1px;
+        background-color: #e5e5e5;
+    }
+}
+
+.page-footer__logo {
+    display: none;
+}
+
+.page-footer__social {
+    margin: 0 auto;
+    margin-bottom: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.page-footer__social__item {
+    &:first-child {
+        padding-top: 5px;
+    }
+    &:last-child {
+        padding-top: 5px;
+    }
+    &:hover svg {
+        fill: #46c1ae;
+    }
+    &:active svg {
+        opacity: 0.3;
+    }
+}
+
+.page-footer__htmlacademy {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    @include font('OpenSans', 19px, 18px, bold, #000);
+    & span {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    & svg {
+        fill: #63d1bb;
+    }
+    &:hover svg {
+        fill: #46c1ae;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .page-footer__wrapper {
+        padding: 51px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        &::before {
+            display: none;
+        }
+    }
+
+    .page-footer__logo {
+        display: inline-block;
+        width: 33.333%;
+        font-size: 0;
+        line-height: 0;
+        &:hover svg {
+            fill: #46c1ae;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .page-footer__social__wrapper {
+        width: 33.333%;
+        text-align: center;
+    }
+
+    .page-footer__social {
+        margin: 0 auto;
+    }
+
+    .page-footer__htmlacademy__wrapper {
+        width: 33.333%;
+    }
+
+    .page-footer__htmlacademy {
+        margin: 0;
+        margin-left: auto;
+        text-align: right;
+        & span {
+            padding-top: 12px;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .page-footer__wrapper {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
