@@ -82,6 +82,10 @@ button {
   .page-header__logo picture {
     display: inline-block;
     height: 35px; }
+  .page-header__logo:hover {
+    opacity: 0.6; }
+  .page-header__logo:active {
+    opacity: 0.3; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .main-nav--close {
@@ -193,7 +197,8 @@ button {
   padding-bottom: 28px;
   position: relative;
   display: inline-block;
-  width: 81.25%; }
+  width: 81.25%;
+  z-index: 10; }
   .site-list__item__link p {
     padding-left: 46px; }
   .site-list__item__link:hover p {
@@ -484,7 +489,8 @@ button {
   background-color: #fff;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25); }
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  display: none; }
 
 .main-nav--open ~ .modal-order {
   top: 1361px; }
@@ -1548,3 +1554,31 @@ button {
     padding-left: 0; }
   .contacts__address {
     padding-left: 175px; } }
+
+.catalog__title {
+  margin: 0 auto;
+  padding-top: 71px;
+  padding-bottom: 76px;
+  min-width: 320px;
+  max-width: 1250px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  background-color: #f1f1f1; }
+
+@media (min-width: 768px) {
+  .catalog__title {
+    padding-top: 96px;
+    padding-bottom: 79px;
+    font-size: 43px;
+    line-height: 50px; } }
+
+@media (min-width: 1250px) {
+  .catalog__title {
+    padding-top: 95px;
+    padding-bottom: 102px;
+    font-size: 53px;
+    line-height: 57px; } }
