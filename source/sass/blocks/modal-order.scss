@@ -1,0 +1,115 @@
+.modal-order {
+    margin: 0 auto;
+    box-sizing: content-box;
+    min-width: 320px;
+    max-width: 566px;
+    position: absolute;
+    top: 1361px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    box-shadow: 0 5px 10px rgba($color: #000101, $alpha: 0.25);
+}
+
+.main-nav--open ~ .modal-order {
+    top: 1361px;
+}
+
+.main-nav--closed ~ .modal-order {
+    top: 1045px;;
+}
+
+.modal-order__wrapper {
+    margin: 0 auto;
+    padding: 31px 30px 46px;
+    min-width: 260px;
+    max-width: 351px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-order__title {
+    margin-bottom: 12px;
+    @include font('OpenSans', 25px, 30px, bold, #000);
+    text-transform: uppercase;
+}
+
+.modal-order__choose-size {
+    margin-bottom: 22px;
+    @include font('OpenSans', 15px, 30px, normal, #444);
+}
+
+.modal-order__size {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-order__btn-size {
+    margin-bottom: 31px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 82px;
+    box-sizing: border-box;
+    @include font('OpenSans', 17px, 16px, bold, #444);
+    text-transform: uppercase;
+    border: 2px solid rgba($color: #444, $alpha: 0.1);
+    &:hover {
+        border: 2px solid rgba($color: #444, $alpha: 0.3);
+    }
+}
+
+.btn-size__active {
+    border: 2px solid rgba($color: #62d1ba, $alpha: 1.0);
+}
+
+.modal-order__add {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    @include font('OpenSans', 17px, 16px, bold, #fff);
+    text-transform: uppercase;
+    background-color: #63d1bb;
+}
+
+@media (min-width: 568px) {
+    .modal-order {
+        border: 1px solid #c6c6c6;
+    }
+
+    .modal-order__wrapper {
+        padding-top: 34px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .modal-order__title {
+        margin-bottom: 13px;
+        font-size: 30px;
+        line-height: 57px;
+        & br {
+            display: none;
+        }
+    }
+
+    .modal-order__choose-size {
+        margin-bottom: 21px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 568px) {
+    .modal-order {
+        top: 1531px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .modal-order {
+        top: 1113px;
+    }
+}
