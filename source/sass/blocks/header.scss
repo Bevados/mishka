@@ -162,3 +162,23 @@ border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
         }
     }
 }
+
+//Для страницы catalog
+
+.catalog-header {
+    max-width: 1150px;
+}
+
+@media (min-width: 1150px) {
+    .catalog-header .page-header__logo {
+        margin-top: 9px;
+        margin-bottom: 7px;
+        width: 149px;
+        height: 72px;
+    }
+
+    .catalog-header picture {
+        width: 149px;
+        height: 72px;
+    }
+}
