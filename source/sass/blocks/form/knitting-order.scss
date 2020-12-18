@@ -1,0 +1,27 @@
+.knitting-order {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1150px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.knitting-order__title {
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 76px;
+    min-width: 320px;
+    max-width: 1150px;
+    @include font('OpenSans', 27px, 30px, bold, #000);
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.knitting-order__description {
+    margin: 0 auto;
+    padding: 22px 45px 24px 30px;
+    min-width: 320px;
+    max-width: 1150px;
+    @include font('OpenSans', 13px, 24px, normal, #444);
+    background-color: #fff;
+}

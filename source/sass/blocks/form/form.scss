@@ -1,0 +1,402 @@
+.form {
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    min-width: 320px;
+    max-width: 1150px;
+    width: 100%;
+    background-color: #fff;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+
+//Блок type
+.form__type {
+    margin-bottom: 32px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__name {
+    padding-right: 28px;
+    margin-bottom: 25px;
+    @include font ('Open Sans', 17px, 16px, bold, #63d1bb);
+    text-transform: uppercase;
+}
+
+.form__type__item {
+    margin-bottom: 20px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-left: 63px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    @include font ('Open Sans', 17px, 18px, bold, #000);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & input {
+        display: none;
+    }
+
+    & input + label::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: #fff;
+        border: 2px solid #444;
+        border-radius: 100px;
+    }
+
+    & input + label:hover:before {
+        border: 2px solid #62d1ba;
+    }
+
+    & input + label:active:before {
+        border: 2px solid #d4d4d4;
+    }
+
+    & input + label:active::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #62d1ba;
+        border-radius: 100px;
+    }
+
+    & input:checked + label::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #62d1ba;
+        border-radius: 100px;
+    }
+}
+
+
+//Блок color
+
+.form__color {
+    margin-bottom: 32px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__name-color  {
+    margin-bottom: 25px;
+    padding-right: 19px;
+}
+
+.form__color__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 0;
+    width: 100%;
+}
+
+.form__color__item {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 64px;
+    position: relative;
+    width: 250px;
+    height: 39px;
+    @include font ('Open Sans', 17px, 18px, bold, #000);
+    & input {
+        display: none;
+    }
+
+    & input + label::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 36px;
+        height: 35px;
+        border: 2px solid #444;
+        background-color: #fff;
+    }
+
+    & input + label:hover::before {
+        border: 2px solid #62d1ba;
+    }
+
+    & input + label:active::before {
+        border: 2px solid #c7c7c7;
+    }
+
+    & input + label:active::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 9px;
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        background-image: url('../img/form-color-checked-mob.png');
+    }
+
+    & input:checked + label::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 9px;
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        background-image: url('../img/form-color-checked-mob.png');
+    }
+
+    & input:checked + label:active::after {
+        display: none;
+    }
+}
+
+//Блок snp - ФИО
+
+.form__snp {
+    margin-bottom: 32px;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__name__snp {
+    margin-bottom: 29px;
+    padding-right: 22px;
+}
+
+.form__snp__list {
+    width: 100%;
+}
+
+.form__snp__item {
+    margin-bottom: 22px;
+    line-height: 0;
+    width: 100%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & label {
+        @include font ('Open Sans', 17px, 18px, bold, #000);
+    }
+    & input {
+        padding: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 100%;
+        height: 52px;
+        @include font ('Open Sans', 19px, 18px, normal, #444);
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: none;
+    }
+    & input::placeholder {
+        @include font ('Open Sans', 17px, 18px, normal, rgba(68, 68, 68, 0.3));
+    }
+    & input:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    & input:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+
+}
+
+//Блок phone
+
+.form__phone {
+    margin-bottom: 32px;
+    position: relative;
+    line-height: 0;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__name__phone {
+    margin-bottom: 7px;
+    padding-right: 32px;
+}
+
+.form__phone__field {
+    padding: 0;
+    padding-top: 16px;
+    padding-right: 41px;
+    padding-bottom: 16px;
+    width: 100%;
+    height: 52px;
+    @include font ('Open Sans', 19px, 18px, normal, #444);
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    &:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:hover + .form__phone__label {
+        fill: #62d1ba;
+        opacity: 1;
+    }
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:focus + .form__phone__label {
+        fill: #62d1ba;
+        opacity: 1;
+    }
+    &::placeholder {
+        @include font ('Open Sans', 17px, 18px, normal, rgba(68, 68, 68, 0.3));
+    }
+
+}
+
+.form__phone__label {
+    position: absolute;
+    display: inline-block;
+    top: 34px;
+    right: 8px;
+    opacity: 0.2;
+}
+
+
+//Блок email
+
+.form__email {
+    margin-bottom: 32px;
+    position: relative;
+    line-height: 0;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__name__email {
+    margin-bottom: 7px;
+    padding-right: 24px;
+}
+
+.form__email__field {
+    padding: 0;
+    padding-top: 16px;
+    padding-right: 41px;
+    padding-bottom: 16px;
+    width: 100%;
+    height: 52px;
+    @include font ('Open Sans', 19px, 18px, normal, #444);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    &:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:hover + .form__email__label {
+        fill: #62d1ba;
+        opacity: 1;
+    }
+
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:focus + .form__email__label {
+        fill: #62d1ba;
+        opacity: 1;
+    }
+
+    &::placeholder {
+        @include font ('Open Sans', 17px, 18px, normal, rgba(68, 68, 68, 0.3));
+    }
+}
+
+.form__email__label {
+    position: absolute;
+    top: 33px;
+    right: 4px;
+    display: inline-block;
+    fill: #333333;
+    opacity: 0.2;
+}
+
+//Блок addition
+
+.form__addition {
+    margin-bottom: 16px;
+    line-height: 0;
+    border: none;
+    border-top: 1px solid #62d1ba;
+    background-color: #fff;
+}
+
+.form__addition__name {
+    margin-bottom: 25px;
+    padding-right: 26px;
+}
+
+.form__addition__field {
+    padding: 0;
+    padding: 14px 16px 16px;
+    width: 100%;
+    @include font ('Open Sans', 19px, 18px, normal, #444);
+    border: none;
+    outline: none;
+    border: 2px solid #444;
+    resize: none;
+    &:hover {
+        border: 2px solid #62d1ba;
+    }
+    &:focus {
+        border: 2px solid #62d1ba;
+    }
+    &::placeholder {
+        @include font ('Open Sans', 17px, 18px, normal, rgba(68, 68, 68, 0.3));
+    }
+}
+
+
+// Блок send
+
+.form__send {
+    margin-bottom: 55px
+}
+
+.form__footnote {
+    margin-bottom: 31px;
+    @include font ('Open Sans', 14px, 16px, normal, #444);
+}
+
+.form__button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    @include font ('Open Sans', 17px, 16px, bold, #444);
+    border: 2px solid #444;
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+        background-color: #444444;
+    }
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
