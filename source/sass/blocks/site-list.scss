@@ -265,3 +265,44 @@
         text-align: center;
     }
 }
+
+
+//Для страницы каталог и форма
+
+@media (min-width: 1150px) {
+    .catalog-header .site-list__item__desktop {
+        display: inline-block;
+        position: absolute;
+        top: 89px;
+        font-size: 15px;
+        text-align: center;
+        & a {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+
+    .catalog-header .site-list__item__desktop__arrivals {
+        margin-left: -7px;
+        width: 185px;
+        text-align: center;
+    }
+
+    .catalog-header .site-list__item__desktop__sale {
+        left: 230px;
+        width: 150px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1250px) {
+    .catalog-header .site-list__item__desktop__arrivals {
+        margin-left: -34px;
+        width: 212px;
+    }
+
+    .catalog-header .site-list__item__desktop__sale {
+        width: 165px;
+    }
+}
